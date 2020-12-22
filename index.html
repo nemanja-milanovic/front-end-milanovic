@@ -1,41 +1,64 @@
-<!DOCTYPE html> <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Web Development</title>
-    </head>
-    <body>
-        <!--Zaglavlje-->
-        <div class="zaglavlje">
-            <div class="zaglavlje-pozadina">
-                
-                <!--Navigaciona strana-->
-                <nav class="zaglavlje-navigacija">
-                    <a href="*">O nama</a>
-                    <a href="*">Galerija</a>
-                    <a href="*">Kontakt</a>
-                </nav>
+<!DOCTYPE html>
+<html lang="en">
 
-                <!--Naslovna strana-->
-                <header class="zaglavlje-naslov">
-                    <h1 id="naslov">Kurs - Web Development</h1>
-                    <p>Dobro dosli</p>
-                </header>
-                <div class="element">Nemanja</div>
-                <div class="skrol">
-                    <a href="*">Pogledaj vise</a>
-                </div>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced CSS - Assignment 1</title>
+    <style>
+
+        a[href^="https://www.google."] {
+            color: green;
+        }
+
+        a[href="https://www.link-group.eu/"] {
+            color: red;
+        }
+
+        #second-div p:nth-child(2n+1) {
+            color: blue;
+        }
+
+        #second-div p:nth-child(2n+2) {
+            color:red;
+        } 
+
+        #first-div p::after{
+            content: "NEW";
+            color: yellow;
+        }
+
+        #second-div p::after{
+            content: none;
+        }
+
+        p:nth-child(8):hover{
+            font-style: italic;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Main Heading</h1>
+    <p>Paragraph 1</p>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/doodles">Google Doodles</a>
+    <a href="https://www.link-group.eu/" target="_blank">Goto Link Group</a>
+    <div id="first-div">
+        <h2>Subheading</h2>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <div id="second-div">
+            <h3>Sub subheading</h3>
+            <p>Paragraph 4</p>
+            <p>Paragraph 5</p>
+            <p>Paragraph 6</p>
+            <p>Paragraph 7</p>
+            <p>Paragraph 8</p>
         </div>
-        
-        <!--Glavni sadzaj-->
-        <section class="glavni" id="glavni">
-            <h1>Lekcija</h1>
-        </section>
-        <div class="kolona-3">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>3</div>
-        </div>
-    </body>
+    </div>
+    <p>Paragraph 9</p>
+    <p>Paragraph 10</p>
+</body>
+
 </html>
